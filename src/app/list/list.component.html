@@ -1,0 +1,28 @@
+<div class="bg-slate-100 p-3 flex flex-wrap justify-evenly">
+  <div
+    class="task-card p-4 bg-slate-200 rounded-lg shadow-md w-full sm:w-full md:w-1/2 lg:w-1/4 m-2 flex"
+    *ngFor="let product of products"
+  >
+    <div class="w-1/2">
+      <h3 class="text-xl font-semibold">{{ product.productName }}</h3>
+      <p class="text-black">{{ product.unitPrice }}</p>
+    </div>
+
+    <div class="w-1/2 flex justify-end items-center">
+      <button
+        (click)="onClickEdit(product)"
+        type="button"
+        class="bg-blue-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-2"
+      >
+        Edit
+      </button>
+      <button
+        (click)="onClickDelete(product._id)"
+        type="button"
+        class="bg-red-500 hover:bg-red-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+      >
+        Delete
+      </button>
+    </div>
+  </div>
+</div>
