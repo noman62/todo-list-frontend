@@ -1,28 +1,53 @@
 # Todoapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
+This is a full-stack web application that performs basic CRUD (Create, Read, Update, Delete) operations on a collection of items. The frontend is built using Angular, the backend uses Node.js and Express, and MongoDB is used as the database.
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Follow the instructions below to run the application locally.
 
-## Code scaffolding
+### Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js and npm: [Install Node.js](https://nodejs.org/)
 
-## Build
+### Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Clone the repository:**
 
-## Running unit tests
+   ```bash
+   git clone https://github.com/noman62/todo-list-frontend
+   https://github.com/noman62/todo-list-server
+   
+### Install backend dependencies:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### cd backend
+#### npm install
+### Install frontend dependencies:
+### cd frontend
+#### npm install
+#### Run the backend server:
+#### cd backend
+### npm start
+### Run the frontend app:
+#### cd frontend
+#### ng serve
+### Access the application:
+#### Open your browser and navigate to http://localhost:4200/
 
-## Running end-to-end tests
+### Project Structure
+#### The project is organized into two main folders:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+#### backend: Node.js and Express server with MongoDB.
+#### frontend: Angular application.
+#### Backend
 
-## Further help
+#### Express server: Runs on http://localhost:8000/api/
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# todo-list-frontend
+#### Frontend
+#### Angular app: Runs on http://localhost:4200/
+#### API Endpoints
+#### GET /api/allProdut: Retrieve all items.
+#### POST /api/addProduct: Add a new item.
+#### PUT /api/delete/:id: Update an existing item.
+#### DELETE /api/update/:id: Delete an item.
+
